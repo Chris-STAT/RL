@@ -95,5 +95,3 @@ for i in range(10):
 #e= Env()
 #h= Human()
 #play(e,h,a_X)
-       
-           
