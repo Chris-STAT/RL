@@ -146,5 +146,3 @@ for i in range(30000):
 #e= Env()
 #h= Human()
 #play(e,h,a_X)
-       
-           
