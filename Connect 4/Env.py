@@ -43,21 +43,21 @@ class Env:
         
          for i in range(6):
             for l in range(5):
-                if np.sum(self.board[i,l:(l+3)]) == self.red*4:
+                if np.sum(self.board[i,l:(l+4)]) == self.red*4:
                    self.winner = 1
                    self.ended = True
                    return(True)
-                elif np.sum(self.board[i,l:(l+3)]) == self.black*4:
+                elif np.sum(self.board[i,l:(l+4)]) == self.black*4:
                    self.winner = -1
                    self.ended = True
                    return(True)
          for j in range(7):
             for m in range(4):
-                if np.sum(self.board[m:(m+3),j]) == self.red*4:
+                if np.sum(self.board[m:(m+4),j]) == self.red*4:
                    self.winner = 1
                    self.ended = True
                    return(True)
-                elif np.sum(self.board[m:(m+3),j]) == self.black*4:
+                elif np.sum(self.board[m:(m+4),j]) == self.black*4:
                    self.winner = -1
                    return(True)
          for i in range(6):
